@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <header class="entete-site">
@@ -36,6 +36,7 @@
           <div class="actions-accueil">
             <a class="bouton principal" href="#projets">Explore my projects</a>
             <a class="bouton secondaire" href="#competences">View my skills</a>
+            <a class="bouton secondaire" href="assets/documents/CV-Youssef-Allag.pdf" target="_blank">View my résumé</a>
           </div>
           <ul class="chiffres-cles">
             <li><strong>3</strong><span>documented core skills</span></li>
@@ -177,8 +178,11 @@
             <section class="reflexion"><h4>Difficulty and progress</h4><p>The challenge was translating business rules into reliable technical constraints. Designing the schema before coding, followed by migrations and tests, prevented duplicates and inconsistent relationships. This is also relevant to cybersecurity because poorly controlled data can become an application weakness.</p></section>
           </div>
           <figure class="carte-preuve">
-            <a href="assets/evidence/ludotheque-models.png?v=2"><img src="assets/evidence/ludotheque-models.png?v=2" alt="Excerpt from the provided models.py file showing the Game, Comment and GameList models"></a>
-            <figcaption><strong>Evidence 02.</strong> Excerpt from the provided <code>models.py</code>: relationships between games, players, comments and game lists, including validation and uniqueness constraints.</figcaption>
+            <div class="ensemble-preuves">
+              <a href="assets/evidence/ludotheque-interface.png"><img src="assets/evidence/ludotheque-interface.png" alt="Working catalogue of the board game library management application"></a>
+              <a href="assets/evidence/ludotheque-models.png?v=2"><img src="assets/evidence/ludotheque-models.png?v=2" alt="Excerpt from the provided models.py file showing the Game, Comment and GameList models"></a>
+            </div>
+            <figcaption><strong>Evidence 02.</strong> Final catalogue interface running with the project database, together with an excerpt from <code>models.py</code> showing relationships, validation rules and uniqueness constraints.</figcaption>
           </figure>
         </div>
       </article>
@@ -322,6 +326,7 @@
       <div class="liens-contact">
         <a href="https://github.com/Yssf67?tab=repositories" target="_blank" rel="noreferrer"><span>GitHub</span><strong>View my repositories ↗</strong></a>
         <a href="https://www.linkedin.com/in/youssef-allag-641799397/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>View my profile ↗</strong></a>
+        <a href="assets/documents/CV-Youssef-Allag.pdf" download><span>Résumé</span><strong>Download my résumé ↓</strong></a>
         <a href="index.html" lang="fr"><span>Version française</span><strong>Lire en français →</strong></a>
       </div>
     </section>

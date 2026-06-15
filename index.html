@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <header class="entete-site">
@@ -36,6 +36,7 @@
           <div class="actions-accueil">
             <a class="bouton principal" href="#projets">Explorer mes projets</a>
             <a class="bouton secondaire" href="#competences">Voir mes compétences</a>
+            <a class="bouton secondaire" href="assets/documents/CV-Youssef-Allag.pdf" target="_blank">Consulter mon CV</a>
           </div>
           <ul class="chiffres-cles">
             <li><strong>3</strong><span>compétences BUT documentées</span></li>
@@ -183,8 +184,11 @@
             <section class="reflexion"><h4>Difficulté et progression</h4><p>La difficulté était de traduire des règles de gestion en contraintes techniques fiables. La conception du schéma avant le code, puis les migrations et les tests, ont permis d'éviter les doublons et les relations incohérentes. Cette démarche est également importante en cybersécurité, car une donnée mal contrôlée devient rapidement une faiblesse applicative.</p></section>
           </div>
           <figure class="carte-preuve">
-            <a href="assets/evidence/ludotheque-models.png?v=2"><img src="assets/evidence/ludotheque-models.png?v=2" alt="Extrait du fichier models.py fourni montrant les modèles Jeu, Commentaire et ListeJeu"></a>
-            <figcaption><strong>Preuve 02.</strong> Extrait du <code>models.py</code> fourni : relations entre les jeux, les joueurs, les commentaires et les listes, avec validations et contraintes d'unicité.</figcaption>
+            <div class="ensemble-preuves">
+              <a href="assets/evidence/ludotheque-interface.png"><img src="assets/evidence/ludotheque-interface.png" alt="Catalogue fonctionnel de l'application web de gestion d'une ludothèque"></a>
+              <a href="assets/evidence/ludotheque-models.png?v=2"><img src="assets/evidence/ludotheque-models.png?v=2" alt="Extrait du fichier models.py fourni montrant les modèles Jeu, Commentaire et ListeJeu"></a>
+            </div>
+            <figcaption><strong>Preuve 02.</strong> Interface finale du catalogue exécutée avec la base du projet, accompagnée d'un extrait du <code>models.py</code> montrant les relations, validations et contraintes d'unicité.</figcaption>
           </figure>
         </div>
       </article>
@@ -328,6 +332,7 @@
       <div class="liens-contact">
         <a href="https://github.com/Yssf67?tab=repositories" target="_blank" rel="noreferrer"><span>GitHub</span><strong>Voir mes dépôts ↗</strong></a>
         <a href="https://www.linkedin.com/in/youssef-allag-641799397/" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>Voir mon profil ↗</strong></a>
+        <a href="assets/documents/CV-Youssef-Allag.pdf" download><span>Curriculum vitæ</span><strong>Télécharger mon CV ↓</strong></a>
         <a href="en.html" lang="en"><span>English version</span><strong>Read in English →</strong></a>
       </div>
     </section>

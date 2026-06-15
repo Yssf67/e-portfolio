@@ -369,6 +369,15 @@ h1 strong { color: #6554d9; font-weight: 600; }
   box-shadow: 0 20px 48px rgba(16,19,23,.16);
 }
 .carte-preuve a { display: block; }
+.ensemble-preuves {
+  display: grid;
+  gap: 14px;
+}
+.ensemble-preuves a + a {
+  padding-top: 14px;
+  border-top: 1px solid #303744;
+}
+.ensemble-preuves img { max-height: 360px; }
 .carte-preuve img {
   display: block;
   width: 100%;
