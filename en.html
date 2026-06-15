@@ -154,8 +154,11 @@
             <section class="reflexion"><h4>Difficulty and progress</h4><p>The main difficulty was maintaining a consistent addressing plan across VLANs, point-to-point links and servers. A reliable method is to centralise the addresses, configure one link at a time and validate each stage before adding routing and services.</p></section>
           </div>
           <figure class="carte-preuve">
-            <a href="assets/evidence/network-config.png"><img src="assets/evidence/network-config.png" alt="Cisco configuration excerpt showing VLANs, interfaces and trunks"></a>
-            <figcaption><strong>Evidence 01.</strong> Actual switch configuration: VLANs, layer-three interfaces, trunks and spanning tree.</figcaption>
+            <div class="ensemble-preuves">
+              <a href="assets/evidence/reseau-topologie.png"><img src="assets/evidence/reseau-topologie.png" alt="Visualisation of the small organisation's GNS3 network topology"></a>
+              <a href="assets/evidence/network-config.png"><img src="assets/evidence/network-config.png" alt="Cisco configuration excerpt showing VLANs, interfaces and trunks"></a>
+            </div>
+            <figcaption><strong>Evidence 01.</strong> Topology generated from the project's GNS3 file: 13 devices and 17 links, together with the actual switch configuration showing VLANs, layer-three interfaces, trunks and spanning tree.</figcaption>
           </figure>
         </div>
       </article>
@@ -204,8 +207,11 @@
             <section class="reflexion"><h4>Difficulty and progress</h4><p>The key challenge was preserving one consistent format across modules and handling Windows paths correctly. Separating business logic from the interface makes the program easier to read, test and maintain. Confirmation before deletion also reduces the risk of an irreversible action.</p></section>
           </div>
           <figure class="carte-preuve">
-            <a href="assets/evidence/sae105-analysis.png"><img src="assets/evidence/sae105-analysis.png" alt="Python file analysis script excerpt"></a>
-            <figcaption><strong>Evidence 03.</strong> Python source implementing scanning, sorting, filtering and JSON export.</figcaption>
+            <div class="ensemble-preuves">
+              <a href="assets/evidence/sae105-interface.png"><img src="assets/evidence/sae105-interface.png" alt="PyQt interface displaying file sizes as a chart"></a>
+              <a href="assets/evidence/sae105-analysis.png"><img src="assets/evidence/sae105-analysis.png" alt="Python file analysis script excerpt"></a>
+            </div>
+            <figcaption><strong>Evidence 03.</strong> PyQt interface executed with the project's result file, together with the Python source implementing scanning, sorting, filtering and JSON export.</figcaption>
           </figure>
         </div>
       </article>

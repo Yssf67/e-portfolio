@@ -160,8 +160,11 @@
             <section class="reflexion"><h4>Difficulté et progression</h4><p>La difficulté principale était de conserver un plan d'adressage cohérent entre les VLAN, les liaisons point à point et les serveurs. Une méthode efficace consiste à centraliser les adresses dans un tableau, configurer une liaison à la fois, puis valider chaque étape avant d'ajouter le routage et les services.</p></section>
           </div>
           <figure class="carte-preuve">
-            <a href="assets/evidence/network-config.png"><img src="assets/evidence/network-config.png" alt="Extrait de la configuration Cisco montrant les VLAN, interfaces et trunks"></a>
-            <figcaption><strong>Preuve 01.</strong> Configuration réelle du commutateur : VLAN, interfaces de niveau 3, trunks et spanning-tree.</figcaption>
+            <div class="ensemble-preuves">
+              <a href="assets/evidence/reseau-topologie.png"><img src="assets/evidence/reseau-topologie.png" alt="Visualisation de la topologie GNS3 de la petite structure"></a>
+              <a href="assets/evidence/network-config.png"><img src="assets/evidence/network-config.png" alt="Extrait de la configuration Cisco montrant les VLAN, interfaces et trunks"></a>
+            </div>
+            <figcaption><strong>Preuve 01.</strong> Topologie issue du fichier GNS3 du projet : 13 équipements et 17 liaisons, accompagnée de la configuration réelle du commutateur avec les VLAN, interfaces de niveau 3, trunks et spanning-tree.</figcaption>
           </figure>
         </div>
       </article>
@@ -210,8 +213,11 @@
             <section class="reflexion"><h4>Difficulté et progression</h4><p>La difficulté principale était de conserver un format identique entre les modules et de gérer proprement les chemins Windows. La séparation entre logique métier et interface améliore la lisibilité, les tests et la maintenance. La confirmation avant suppression montre aussi l'importance de réduire le risque d'une action irréversible.</p></section>
           </div>
           <figure class="carte-preuve">
-            <a href="assets/evidence/sae105-analysis.png"><img src="assets/evidence/sae105-analysis.png" alt="Extrait du script Python d'analyse des fichiers"></a>
-            <figcaption><strong>Preuve 03.</strong> Script Python réalisant le parcours, le tri, le filtrage et l'export JSON.</figcaption>
+            <div class="ensemble-preuves">
+              <a href="assets/evidence/sae105-interface.png"><img src="assets/evidence/sae105-interface.png" alt="Interface PyQt de visualisation des tailles de fichiers sous forme de graphique"></a>
+              <a href="assets/evidence/sae105-analysis.png"><img src="assets/evidence/sae105-analysis.png" alt="Extrait du script Python d'analyse des fichiers"></a>
+            </div>
+            <figcaption><strong>Preuve 03.</strong> Interface PyQt exécutée avec le fichier de résultats du projet, accompagnée du script Python réalisant le parcours, le tri, le filtrage et l'export JSON.</figcaption>
           </figure>
         </div>
       </article>
