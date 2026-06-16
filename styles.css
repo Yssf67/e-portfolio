@@ -581,3 +581,280 @@ footer a { color: white; text-decoration: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Version plus sobre : portfolio etudiant, facile a expliquer en HTML/CSS. */
+:root {
+  --ink: #1d2935;
+  --muted: #5f6b76;
+  --paper: #f7f8fa;
+  --white: #ffffff;
+  --line: #d7dde3;
+  --cyan: #1d8f99;
+  --violet: #395da8;
+  --lime: #3b7f43;
+  --orange: #b45f32;
+  --radius: 14px;
+  --shadow: none;
+}
+
+body {
+  background: var(--paper);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4,
+.marque,
+.sigle-marque,
+.numero,
+.numero-fiche,
+.grille-preuves span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.entete-site {
+  position: sticky;
+  top: 0;
+  left: auto;
+  transform: none;
+  width: 100%;
+  max-width: none;
+  min-height: 58px;
+  padding: 10px 6vw;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: white;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+.sigle-marque {
+  border-radius: 8px;
+  background: #31506f;
+}
+
+.navigation-principale a {
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.navigation-principale a:hover {
+  background: #eef2f5;
+}
+
+.navigation-principale .selecteur-langue {
+  background: #31506f;
+}
+
+.accueil {
+  min-height: auto;
+  padding: 86px 6vw 70px;
+  background: var(--paper);
+}
+
+.grille-accueil {
+  gap: 42px;
+}
+
+h1 {
+  max-width: 760px;
+  margin-bottom: 20px;
+  font-size: clamp(40px, 5vw, 58px);
+  letter-spacing: -.02em;
+  font-weight: 700;
+}
+
+h1 strong {
+  color: #31506f;
+  font-weight: 700;
+}
+
+.introduction-accueil {
+  max-width: 650px;
+  font-size: 17px;
+}
+
+.bouton {
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: none;
+}
+
+.bouton:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.bouton.principal {
+  background: #31506f;
+  border-color: #31506f;
+}
+
+.chiffres-cles {
+  margin-top: 36px;
+  gap: 24px;
+}
+
+.visuel-accueil {
+  min-height: 370px;
+}
+
+.carte-portrait {
+  width: min(300px, 90%);
+  border-radius: 18px;
+  background: white;
+  box-shadow: none;
+  transform: none;
+}
+
+.emplacement-portrait {
+  min-height: 310px;
+  border-radius: 12px;
+  background: #31506f;
+  font-size: 72px;
+}
+
+.statut {
+  position: static;
+  margin-top: 12px;
+  box-shadow: none;
+  border: 1px solid var(--line);
+}
+
+.bulle {
+  display: none;
+}
+
+.section {
+  padding: 76px 6vw;
+}
+
+.entete-section {
+  margin-bottom: 36px;
+}
+
+.entete-section h2,
+.section-contact h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: -.02em;
+}
+
+.section-profil {
+  background: white;
+}
+
+.grille-profil {
+  gap: 48px;
+}
+
+.presentation-profil .accroche {
+  font-size: 20px;
+}
+
+.section-sombre {
+  background: #243447;
+}
+
+.grille-competences {
+  gap: 16px;
+}
+
+.carte-competence {
+  min-height: auto;
+  border-radius: var(--radius);
+  background: #2d4054;
+  transition: none;
+}
+
+.carte-competence:hover {
+  transform: none;
+}
+
+.carte-competence h3 {
+  margin-top: 36px;
+  font-size: 30px;
+}
+
+.fiche-projet,
+.carte-projet,
+.grille-preuves article,
+.note-confidentialite {
+  border-radius: var(--radius);
+  box-shadow: none;
+}
+
+.entete-fiche h3 {
+  font-size: clamp(26px, 3vw, 38px);
+  letter-spacing: -.02em;
+}
+
+.numero-fiche,
+.element-chronologie span,
+.grille-preuves span {
+  color: #31506f;
+}
+
+.etiquettes-competences span {
+  color: #31506f;
+  border-color: #c8d4df;
+  background: #eef3f7;
+}
+
+.texte-fiche .acquisition {
+  background: #f2f5f7;
+}
+
+.texte-fiche .reflexion,
+.reflexion {
+  border-left-color: #31506f;
+  background: #f1f5f9;
+}
+
+.carte-preuve {
+  border-color: #d7dde3;
+  background: #f7f8fa;
+  box-shadow: none;
+}
+
+.ensemble-preuves a + a {
+  border-top-color: #d7dde3;
+}
+
+.carte-preuve figcaption {
+  color: #4f5b66;
+}
+
+.carte-preuve figcaption strong {
+  color: #1d2935;
+}
+
+.section-contact {
+  background: #31506f;
+}
+
+.section-contact .surtitre,
+.section-contact p {
+  color: #e7edf3;
+}
+
+.liens-contact span {
+  color: #d8e3ec;
+}
+
+footer {
+  background: #243447;
+}
+
+@media (max-width: 620px) {
+  .entete-site {
+    position: static;
+    width: 100%;
+    padding: 10px 18px;
+  }
+  .accueil {
+    padding-top: 58px;
+  }
+  h1 {
+    font-size: 38px;
+  }
+}
