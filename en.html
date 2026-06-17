@@ -172,22 +172,22 @@
         </header>
         <div class="grille-fiche">
           <div class="texte-fiche">
-            <section><h4>Project context</h4><p>The team had to develop a Django application connected to MariaDB. It manages games, authors, categories, players, comments, ratings and personal game lists.</p></section>
-            <section><h4>My personal contribution</h4><p>I was mainly responsible for designing the database and developing part of the backend. I defined the relational schema, keys and constraints required to maintain data consistency. I also configured the connection between Django and MariaDB, developed CRUD features for games and authors, and created the <code>seed_data</code> command to insert the initial data automatically without creating duplicates.</p></section>
+            <section><h4>Project context</h4><p>This project aimed to build, as a team, a web application for managing a board game library. The application stores and displays games, authors, categories, players and comments. It also supports game ratings and personal game lists.</p><p>The project used Django for the web application and MariaDB for data storage. Tasks were shared within the group so that each member was responsible for a clear part of the solution.</p></section>
+            <section><h4>My personal contribution</h4><p>I mainly worked on the database and part of the backend. I designed the relational schema by defining tables, primary keys, foreign keys and relationships between categories, authors, games, players, comments and personal lists.</p><p>I added constraints to keep the data consistent, including unique fields, rating limits between 0 and 10, and protected relationships for authors and categories linked to games. I also configured the Django-MariaDB connection with <code>mysqlclient</code>, using environment variables for sensitive settings.</p><p>I contributed to the documentation of the relational schema and design choices so that the database structure could be understood by the rest of the team.</p></section>
             <section class="acquisition"><h4>Skills acquired</h4>
-              <p><strong>AC13.05 - Select appropriate data management mechanisms.</strong> Foreign keys, uniqueness constraints and deletion rules preserve data consistency.</p>
-              <p><strong>AC13.04 - Understand website architecture.</strong> I learned how models, views, routes, forms, HTML templates and the database interact.</p>
-              <p><strong>AC13.02 - Read, correct and modify a program.</strong> I ran migrations, corrected models and verified CRUD operations.</p>
-              <p><strong>AC13.06 - Work in a collaborative environment.</strong> My database and backend work had to remain compatible with the other team members' contributions.</p>
+              <p><strong>AC13.05 - Select appropriate data management mechanisms.</strong> Designing the relational schema and implementing it in MariaDB helped me choose suitable relationships, foreign keys, uniqueness constraints and deletion rules.</p>
+              <p><strong>AC13.04 - Understand website architecture and technologies.</strong> Working on the connection between the application and MariaDB helped me understand how a database fits into the architecture of a web application.</p>
+              <p><strong>AC13.02 - Read, run, correct and modify a program.</strong> Creating and checking the data structure required me to run migrations, inspect tables and correct inconsistencies.</p>
+              <p><strong>AC13.06 - Work in a collaborative environment.</strong> The database had to remain compatible with the interface, user management and the other features developed by the group.</p>
             </section>
-            <section class="reflexion"><h4>Difficulty and progress</h4><p>The challenge was translating business rules into reliable technical constraints. Designing the schema before coding, followed by migrations and tests, prevented duplicates and inconsistent relationships. This is also relevant to cybersecurity because poorly controlled data can become an application weakness.</p></section>
+            <section class="reflexion"><h4>Difficulty and progress</h4><p>The main challenge was translating management rules into reliable SQL constraints. I had to avoid duplicates, validate ratings, protect important relationships and keep the structure understandable for the rest of the team.</p></section>
           </div>
           <figure class="carte-preuve">
             <div class="ensemble-preuves">
-              <a href="assets/evidence/ludotheque-interface.png"><img src="assets/evidence/ludotheque-interface.png" alt="Working catalogue of the board game library management application"></a>
-              <a href="assets/evidence/ludotheque-models.png?v=2"><img src="assets/evidence/ludotheque-models.png?v=2" alt="Excerpt from the provided models.py file showing the Game, Comment and GameList models"></a>
+              <a href="assets/evidence/ludotheque-sql-schema.png"><img src="assets/evidence/ludotheque-sql-schema.png" alt="SQL excerpt of the MariaDB relational schema for the board game library"></a>
+              <a href="assets/evidence/ludotheque-sql-controles.png"><img src="assets/evidence/ludotheque-sql-controles.png" alt="SQL queries used to create and check the MariaDB database"></a>
             </div>
-            <figcaption><strong>Evidence 02.</strong> Final catalogue interface running with the project database, together with an excerpt from <code>models.py</code> showing relationships, validation rules and uniqueness constraints.</figcaption>
+            <figcaption><strong>Evidence 02.</strong> SQL excerpts from the project: MariaDB database creation, relational schema, primary keys, foreign keys, uniqueness constraints, <code>CHECK</code> constraints and <code>information_schema</code> verification queries.</figcaption>
           </figure>
         </div>
       </article>
