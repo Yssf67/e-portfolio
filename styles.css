@@ -274,9 +274,86 @@ h1 strong { color: #6554d9; font-weight: 600; }
 .carte-competence ul { padding-left: 18px; color: #dce0e4; }
 .carte-competence li { margin-bottom: 7px; }
 .carte-competence a { margin-top: auto; font-weight: 700; text-decoration: none; }
+.carte-competence h3 a { color: inherit; }
 .carte-competence[data-accent="cyan"] h3, .carte-competence[data-accent="cyan"] a { color: var(--cyan); }
 .carte-competence[data-accent="violet"] h3, .carte-competence[data-accent="violet"] a { color: var(--violet); }
 .carte-competence[data-accent="lime"] h3, .carte-competence[data-accent="lime"] a { color: var(--lime); }
+
+.page-detail {
+  background: var(--paper);
+}
+.retour-portfolio {
+  display: inline-flex;
+  margin-bottom: 28px;
+  color: #31506f;
+  font-weight: 800;
+  text-decoration: none;
+}
+.hero-competence {
+  width: min(1120px, 100%);
+  margin: 0 auto 28px;
+  padding: 42px;
+  border-radius: var(--radius);
+  color: white;
+  background: #243447;
+}
+.hero-competence .surtitre {
+  color: #c9d8e5;
+}
+.hero-competence h1 {
+  margin: 0 0 14px;
+  font-size: clamp(38px, 7vw, 78px);
+  letter-spacing: -.06em;
+}
+.hero-competence p {
+  max-width: 760px;
+  color: #e5edf4;
+  font-size: 18px;
+}
+.grille-detail-competence {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+.bloc-sae {
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: white;
+}
+.bloc-sae h2 {
+  margin: 0 0 10px;
+  font-size: clamp(26px, 4vw, 40px);
+  letter-spacing: -.035em;
+}
+.bloc-sae h3 {
+  margin: 22px 0 8px;
+  font-size: 18px;
+}
+.bloc-sae p {
+  color: #58616a;
+}
+.bloc-sae ul {
+  padding-left: 18px;
+  color: #58616a;
+}
+.preuves-liees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+.preuves-liees a {
+  padding: 9px 12px;
+  border-radius: 999px;
+  background: #eef3f7;
+  color: #31506f;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
 
 .section-projets { background: var(--paper); }
 .fiche-projet {

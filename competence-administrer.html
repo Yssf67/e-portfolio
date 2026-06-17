@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administrer - Youssef Allag</title>
+  <link rel="stylesheet" href="styles.css?v=6">
+</head>
+<body class="page-detail">
+  <header class="entete-site">
+    <a class="marque" href="index.html#accueil"><span class="sigle-marque">YA</span><span>Youssef Allag</span></a>
+    <nav class="navigation-principale" aria-label="Navigation principale">
+      <a href="index.html#profil">Profil</a>
+      <a href="index.html#competences">Compétences</a>
+      <a href="index.html#projets">Projets</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <a class="retour-portfolio" href="index.html#competences">← Retour aux compétences</a>
+    <section class="hero-competence">
+      <p class="surtitre">Compétence 01</p>
+      <h1>Administrer</h1>
+      <p>Cette compétence regroupe les projets où j'ai configuré, organisé et vérifié des réseaux, des systèmes et des services.</p>
+    </section>
+
+    <div class="grille-detail-competence">
+      <article class="bloc-sae">
+        <h2>SAÉ2.01 - Construire le réseau d'une petite structure</h2>
+        <p>Le projet principal consiste à créer une infrastructure dans GNS3 avec VLAN, routeurs Cisco, commutateurs, postes clients et serveurs Debian.</p>
+        <h3>Ce que cette SAÉ m'a permis d'acquérir</h3>
+        <ul>
+          <li>Configurer des VLAN, trunks, passerelles et routes.</li>
+          <li>Comprendre l'organisation d'un réseau segmenté.</li>
+          <li>Installer et relier des services Debian au réseau.</li>
+          <li>Diagnostiquer avec des commandes comme <code>show vlan brief</code>, <code>show ip route</code> et des tests de connectivité.</li>
+        </ul>
+        <div class="preuves-liees">
+          <a href="index.html#reseau">Voir la fiche complète</a>
+          <a href="assets/evidence/reseau-topologie.png">Preuve topologie</a>
+          <a href="assets/evidence/network-config.png">Preuve configuration</a>
+        </div>
+      </article>
+
+      <article class="bloc-sae">
+        <h2>Application web de gestion d'une ludothèque</h2>
+        <p>Le projet Django/MariaDB m'a aussi fait travailler l'administration côté serveur : configuration de la base, connexion à l'application et cohérence des données.</p>
+        <h3>Ce que cette SAÉ m'a permis d'acquérir</h3>
+        <ul>
+          <li>Relier une application à une base MariaDB.</li>
+          <li>Organiser les données pour éviter les doublons et incohérences.</li>
+          <li>Comprendre le lien entre backend, base de données et serveur.</li>
+        </ul>
+        <div class="preuves-liees">
+          <a href="index.html#ludotheque">Voir la fiche complète</a>
+          <a href="assets/evidence/ludotheque-models.png">Preuve models.py</a>
+        </div>
+      </article>
+
+      <article class="bloc-sae">
+        <h2>WebRadio connectée</h2>
+        <p>Le projet WebRadio m'a permis de travailler la connexion Wi-Fi, MQTT et le diagnostic d'un système connecté.</p>
+        <h3>Ce que ce projet m'a permis d'acquérir</h3>
+        <ul>
+          <li>Configurer une connexion Wi-Fi sur un ESP32.</li>
+          <li>Utiliser MQTT pour échanger des commandes et des états.</li>
+          <li>Analyser les problèmes de connexion avec les messages série.</li>
+        </ul>
+        <div class="preuves-liees">
+          <a href="index.html#webradio">Voir la fiche complète</a>
+          <a href="assets/evidence/webradio-mqtt.png">Preuve code MQTT</a>
+        </div>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
