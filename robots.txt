@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://yssf67.github.io/e-portfolio/sitemap.xml
